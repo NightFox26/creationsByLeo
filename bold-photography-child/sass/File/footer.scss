@@ -1,0 +1,48 @@
+footer{
+    display: flex;
+    justify-content: center;
+    @media screen and(max-width:$mobile){
+        flex-direction: column;
+    }
+    aside.footer-widget-area{
+        padding: 0;
+    }
+    .footer-widget-1{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        @media screen and(max-width:$mobile){
+           padding: 5px 10px;
+        }
+        .widget_custom_html{
+            margin-bottom: 0;
+            margin-right: 15px;
+            .custom-html-widget{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
+                @media screen and(max-width:$mobile){
+                    justify-content: start;
+                }
+                a{
+                    margin: 0 10px;
+                    @media screen and(max-width:$mobile){
+                        margin: 0;
+                    }
+                    &#contactLink{
+                        @media screen and(max-width:$mobile){
+                            position: relative;
+                            left: 6px;
+                        }
+                    }
+                }
+            }            
+        }
+    }
+    #site-generator{
+        @media screen and(max-width:$mobile){
+           padding: 7px 20px;
+        }
+    }
+}

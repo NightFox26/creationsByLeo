@@ -1,0 +1,104 @@
+.home{
+    .hero-content-wrapper{
+        .post-thumbnail-background{
+            background-size: cover;            
+        }
+        .entry-container{
+            display: none;
+            header{
+                h2{
+                    font-size: 48px;
+                    color: $gold !important;
+                    text-decoration: underline;
+                    font-family: $font_handwritting;
+                }
+            }
+        }
+    }
+    
+    //dernieres news
+    #primary.content-area{
+        max-width: 100%;
+        .site-main{
+            .archive-posts-wrapper {
+                .section-heading-wrapper{
+                    @media screen and(max-width:$mobile){
+                        padding: 0 15px 42px 15px;
+                    }
+                    .section-title-wrapper{
+                        h2{                            
+                            a{
+                                font-size: 58px;
+                                color: $gold !important;
+                                text-decoration: underline;
+                                font-family: $font_handwritting;
+                            }   
+                                
+                        }
+                    }
+                }
+                .section-content-wrapper{
+                    display: none;                   
+                    #infinite-post-wrap{
+                        display: flex;
+                        flex-wrap: wrap;                    
+                        article{
+                            width: 50%;
+                            margin-bottom: 30px;
+                            @media screen and(max-width:$tablet){
+                                height: 160px;
+                            }
+                            @media screen and(max-width:$tabletVertical){
+                                width: 100%;
+                                margin-bottom: 60px;
+                            }   
+                            @media screen and(max-width:$mobile){
+                                height: auto;
+                                margin-bottom: 30px;
+                            }                     
+                            &:last-child{
+                                margin-bottom: 0;
+                                @media screen and(max-width:$tabletVertical){                               
+                                    margin-bottom: 60px;
+                                }
+                                @media screen and(max-width:$mobile){
+                                    height: auto;
+                                    margin-bottom: 0px;
+                                }
+                            }
+                            .post-wrapper{
+                                display: flex;
+                                @media screen and(max-width:$mobile){
+                                    flex-direction: column;
+                                } 
+                                .post-thumbnail,
+                                .entry-container{
+                                    width:50%;
+                                    margin-bottom: 0;
+                                    @media screen and(max-width:$mobile){
+                                        width:100%;
+                                        padding: 0 0 !important;
+                                    } 
+                                }
+                                .entry-container{
+                                    padding: 0 20px;
+                                    h2{
+                                        font-size: 28px;
+                                        @media screen and(max-width:$mobile){
+                                            margin-bottom: 0;
+                                        }
+                                    }
+                                    .entry-summary{
+                                        @media screen and(max-width:$tablet){
+                                            display: none;
+                                        } 
+                                    }
+                                }
+                            }
+                         }
+                    }
+                }
+            }
+        }
+    } 
+}

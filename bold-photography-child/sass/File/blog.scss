@@ -1,0 +1,9 @@
+.status-publish{
+    .entry-content{
+        .postExcerpt{
+            @media screen and(max-width:$mobile) {
+                display: none;
+            }
+        }
+    }
+}

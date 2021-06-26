@@ -1,0 +1,5 @@
+/*change la couleur de fond de gutenberg*/
+
+.edit-post-visual-editor{
+    background-color: rgb(169, 169, 211) !important;
+}
